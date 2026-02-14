@@ -1,0 +1,47 @@
+/* 动画模态框样式 */
+.modal-backdrop-animated {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(17, 32, 42, 0.44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content-animated {
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+  padding: 20px;
+  max-width: min(90vw, 500px);
+  width: 100%;
+}
+
+/* 暗色模式 */
+[data-theme='dark'] .modal-backdrop-animated {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+[data-theme='dark'] .modal-content-animated {
+  background: rgba(28, 32, 38, 0.96);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .modal-backdrop-animated {
+    padding: 16px;
+    align-items: flex-end;
+  }
+
+  .modal-content-animated {
+    max-width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+}

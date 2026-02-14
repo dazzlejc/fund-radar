@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "mcp__zread__get_repo_structure",
+      "mcp__web-search-prime__webSearchPrime",
+      "mcp__web-reader__webReader",
+      "Bash(powershell:*)",
+      "Bash(findstr:*)",
+      "Bash(\"c:\\\\Users\\\\duanj\\\\Desktop\\\\基金实时估值\\\\styles\\\\globals.css\":*)",
+      "Bash(\"c:\\\\Users\\\\duanj\\\\Desktop\\\\基金实时估值\\\\styles\\\\sticky-summary.css\":*)"
+    ]
+  }
+}

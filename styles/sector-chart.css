@@ -1,0 +1,154 @@
+.sector-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 44, 67, 0.12);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(15, 44, 67, 0.08);
+}
+
+.sector-header {
+  margin-bottom: 16px;
+}
+
+.sector-kicker {
+  font-size: 12px;
+  color: rgba(18, 43, 63, 0.68);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 4px 0;
+}
+
+.sector-title {
+  font-size: 20px;
+  color: #122f43;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.sector-total {
+  font-size: 14px;
+  color: rgba(18, 43, 63, 0.68);
+  margin: 0;
+}
+
+.sector-empty {
+  font-size: 14px;
+  color: rgba(18, 43, 63, 0.48);
+  margin: 0;
+}
+
+.sector-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sector-chart {
+  flex-shrink: 0;
+  width: 220px;
+}
+
+.sector-legend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.sector-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.sector-legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.sector-legend-name {
+  color: #2c3e50;
+  font-weight: 500;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sector-legend-value {
+  color: #2c3e50;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sector-legend-percent {
+  color: rgba(18, 43, 63, 0.68);
+  font-weight: 500;
+  min-width: 50px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.sector-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  color: rgba(18, 43, 63, 0.68);
+  font-size: 14px;
+}
+
+/* Dark theme support */
+[data-theme='dark'] .sector-card {
+  background: rgba(28, 30, 33, 0.96);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .sector-kicker,
+[data-theme='dark'] .sector-total,
+[data-theme='dark'] .sector-empty {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme='dark'] .sector-title {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+[data-theme='dark'] .sector-legend-name,
+[data-theme='dark'] .sector-legend-value {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+[data-theme='dark'] .sector-legend-percent {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme='dark'] .sector-loading {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sector-content {
+    flex-direction: column;
+  }
+
+  .sector-chart {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .sector-legend {
+    max-height: none;
+  }
+}
