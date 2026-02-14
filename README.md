@@ -5,6 +5,7 @@
 一款现代化的纯前端基金追踪与管理工具，实时监控基金估值、持仓收益与重仓股走势。
 
 ![效果展示](https://img.031027.xyz/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-14%20215328.webp)
+![效果展示](https://img.031027.xyz/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-14%20220751.webp)
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.4-blue?style=for-the-badge&logo=react)](https://react.dev/)
